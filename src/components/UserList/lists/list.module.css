@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 30px;
+  padding: 1%;
+  min-width: 150px;
+  width: 100%;
+  min-height: 150px;
+  height: 100%;
+  --user-photo-size: 150px;
+  background-color: #e6edef;
+}
+
+.container {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.user {
+  position: relative;
+  width: 300px;
+  background-color: #fff9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.icon {
+  width: var(--user-photo-size);
+  height: var(--user-photo-size);
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.user > .btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(rgb(140, 255, 197), rgb(68, 112, 153));
+  box-shadow: 0 0 5px grey;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(rgb(105, 190, 148), rgb(49, 80, 109));
+}
+
+.btn:active {
+  transform: scale(0.96);
+}

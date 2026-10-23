@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.maleCard {
+  box-shadow: 3px 5px 20px rgb(107, 107, 236);
+}
+
+.femaleCard {
+  box-shadow: 3px 5px 20px rgb(253, 122, 122);
+}
+
+.icon {
+  width: 400px;
+  height: 430px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 40px;
+  border: none;
+  background: linear-gradient(rgb(140, 255, 197), rgb(68, 112, 153));
+  box-shadow: 3px 5px 20px rgb(68, 112, 153);
+  color: white;
+  margin-top: -35px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(rgb(105, 190, 148), rgb(49, 80, 109));
+}
+
+.userFullName {
+  position: absolute;
+  top: 50%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nickname {
+  position: absolute;
+  top: 55%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.isVerified {
+  position: absolute;
+  right: 95px;
+  top: 302px;
+  width: 25px;
+}
+
+.infoContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.infoText {
+  color: grey;
+}
+
+.num {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}

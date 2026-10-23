@@ -1,0 +1,99 @@
+@import "./style/_templates"
+@import "./style//_vars" 
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-size: 16px
+    list-style: none
+
+
+h1
+  font-size: 35px
+  color: white
+
+.navMenu
+    display: flex
+    font-display: row
+
+
+.main
+    @extend %flex
+    flex: 1
+
+.all
+    display: flex
+    flex-direction: column
+    position: relative      
+    min-height: 100vh  
+    width: 100%
+
+.head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 40px   
+    width: 100vw 
+    height: 100px
+    background: rgb(83, 82, 83)
+
+.resumeContainer
+    @extend %flex
+    flex-direction: column
+    text-align: center
+
+.homePage
+    font-size: 44px
+    font-weight: 500
+
+.component
+    text-decoration: none
+    font-size: 50px
+    font-weight: 500
+    color: white
+    background: rgb(83, 82, 83)
+    border-radius: 10px
+    padding: 20px
+    &:hover
+        background: rgb(51, 51, 51)
+        cursor: pointer
+
+.componentsPage
+  flex-direction: column
+  @extend %flex
+  gap: 30px
+  width: 100%
+
+.componentsMenu
+  display: flex
+  justify-content: center
+  gap: 50px
+  list-style: none
+  padding: 0
+  margin: 0
+
+.foot
+    background: rgb(53, 53, 53)
+    color: white
+    font-style: initial
+    @extend %flex
+    height: 100px
+    padding: 30px
+    position: relative
+    bottom: 0
+
+.navContainer
+    display: flex
+    flex-direction: row
+    gap: 30px
+
+.navElement
+  background: rgb(78, 129, 241)
+  border-radius: 10px
+  display: block
+  padding: 10px
+  text-decoration: none
+  color: white
+  font-weight: 500
+
