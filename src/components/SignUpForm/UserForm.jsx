@@ -77,7 +77,7 @@ export default class LoginForm extends Component {
 
     return (
       <>
-        <h1>Sign Up</h1>
+        <h1 className={styles.title}>Sign Up</h1>
         <div className={styles.container}>
           <form onSubmit={this.handleSubmit} className={styles.form}>
             <span className={styles.topIcon}>
